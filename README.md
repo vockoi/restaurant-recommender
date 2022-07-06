@@ -6,28 +6,24 @@ C program which recommends restaurants for customers to visit on the basis of us
 * [Program description](#program-description)
 * [Program input](#program-input)
 * [Running the program](#running-the-program)
+* [Credits](#credits)
 
-## Program Description
-
-To view sample program input and output, access the __ folder. 
+## Program description
 
 The program consists of four 'stages' with the following functionalities:
 
-### Stage 1
-- Shows the number of restaurants in the restaurant records
-- Shows restaurant with the smallest price per head
-### Stage 2
-- Shows a restaurant-visiting matrix, where each row is the restaurant visiting record of a customer
-- The *i*-th column of the matrix represents customers' visiting records to the i-th restaurant in the restaurant records
-- Each integer represents the amount of times a restaurant has been visited by a customer
-### Stage 3 
-- Shows a matrix recommending restaurants a customer may want to visit next time based on restaurant similarities (**content-based** recommendation).
-### Stage 4
-- Shows a matrix recommending restaurants a customer may want to visit next time based on customer similarities (**user-based** collaborative filtering).
+1. **Stage 1**: Shows the number of restaurants in the restaurant records, and shows the restaurant with the smallest price per head
+2. **Stage 2**: Shows a restaurant-visiting matrix, where each row is a customer's restaurant-visiting records
+3. **Stage 3**: Shows a matrix recommending restaurants a customer may want to visit next time based on restaurant similarities (**content-based** recommendation).
+4. **Stage 4**: Shows a matrix recommending restaurants a customer may want to visit next time based on customer similarities (**user-based** collaborative filtering).
 
-### Matrix representation
+### Matrix representations
 
-For stage 3 and 4, values '-', '+', and '*' in the matrix denote values -1, -2, and -3, respectively. The more negative the value, the more the restaurant is recommended.
+I strongly recommend viewing the sample program output and input while reading along this section and the 'Program input' section. To do so, access the __ folder. 
+
+- The *i*-th column of each matrix represents customers' visiting records to the i-th restaurant in the restaurant records
+- Each **positive** integer represents the amount of times a restaurant has been visited by a customer.
+- Each non-numeric **symbol** represents how much a restaurant is recommended to a customer. Values '-', '+', and '\*' denote values -1, -2, and -3, respectively. The more negative the value, the more the restaurant is recommended to the user.
 
 ## Program input
 
@@ -50,3 +46,10 @@ Then input continues with **dining records** containing at least 1 dining transa
 - The transaction amount, an integer.
 
 ## Running the program
+
+
+
+## Credits
+
+- The COMP10002 teaching team, which includes lecturers Jianzhong Qi and Shaanan Cohney in particular, came up with the specifications found in the sections 'Program description' and 'Program input'. I just did the code to implement these specifications.
+- The program utilizes a C file of linked list operations implemented by Alistair Moffat in his book "Programming, Problem Solving and Abstraction with C" (2013).
