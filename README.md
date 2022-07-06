@@ -2,7 +2,12 @@
 
 C program which recommends restaurants for customers to visit on the basis of user-based and content-based similarities, given a list of restaurant records and dining transactions.
 
-## Program description
+## Table of contents
+* [Program description](#program-description)
+* [Program input](#program-input)
+* [Running the program](#running-the-program)
+
+## Program Description
 
 To view sample program input and output, access the __ folder. 
 
