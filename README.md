@@ -50,7 +50,7 @@ The program output consists of the following four 'stages':
 - **Stage 1**: Shows the number of restaurants in the restaurant records, and shows the restaurant with the smallest price per head
 - **Stage 2**: Shows a restaurant-visiting matrix, where each row is a customer's restaurant-visiting records
 - **Stage 3**: Shows a matrix recommending restaurants a customer may want to visit next time based on restaurant similarities (**content-based** recommendation).
-- **Stage 4**: Shows a matrix recommending restaurants a customer may want to visit next time based on customer similarities (**user-based** collaborative filtering).
+- **Stage 4**: Shows a matrix recommending restaurants a customer may want to visit next time based on customer similarities (**user-based** collaborative filtering). Summarizes top restaurants recommended for each customer.
 
 ### Matrix representations
 
