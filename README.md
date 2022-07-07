@@ -62,7 +62,7 @@ The program output consists of the following four 'stages':
 
 To run the program, provide your chosen restaurant and dining records file as input to the executable. 
 
-For example in Apple terminal: ```restaurant-recommender < input_file.txt```.
+For example, in command prompt or terminal: ```restaurant-recommender < input_file.txt```.
 
 If you'd like to compile the code yourself, compile 'restaurant-recommender.c' which can be found in 'code'; this should create the 'restaurant-recommender' executable file.
 
