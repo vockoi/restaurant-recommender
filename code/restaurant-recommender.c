@@ -61,10 +61,11 @@ int is_recommended(int idx_restaurant_1, int idx_restaurant_2, restaurant_record
 double restaurant_distance(restaurant_t restaurant_1, restaurant_t restaurant_2);
 
 /* stage four */
-void stage_four(list_t *dining_records, int num_restaurants);
+void stage_four(list_t *dining_records, int num_restaurants, restaurant_records_t restaurant_records);
 void find_2_most_similar(customer_t customer, list_t *dining_records, int num_restaurants, customer_t top2_most_similar[2]);
 int get_similarity_score(customer_t customer_1, customer_t customer_2, int num_restaurants);
 void update_recommendation(int num_restaurants, customer_t customer, customer_t top2_most_similar[2]);
+void print_restaurants_to_visit(list_t *dining_records, int num_restaurants, restaurant_records_t restaurant_records);
 
 /****************************************************************/
 
@@ -88,7 +89,7 @@ main(int argc, char *argv[]) {
     stage_one(restaurant_records, &num_restaurants);
     stage_two(dining_records, restaurant_records, num_restaurants);
     stage_three(num_restaurants, dining_records, restaurant_records);
-    stage_four(dining_records, num_restaurants);
+    stage_four(dining_records, num_restaurants, restaurant_records);
     
     free(dining_records);
     
@@ -322,7 +323,7 @@ double restaurant_distance(restaurant_t restaurant_1, restaurant_t restaurant_2)
 }
 
 //STAGE FOUR
-void stage_four(list_t *dining_records, int num_restaurants) {
+void stage_four(list_t *dining_records, int num_restaurants, restaurant_records_t restaurant_records) {
     /* for each customer A in `dining_records`, find two other customers B and C with most similar restaurant_visits array to A (the similarity scores must be more than 0). for each similar customer
     kept, recommend restaurants unvisited by A, that have been visited by B and/or C (if kept). for each recommended restaurant, subtract corresponding value in restaurant_visits array by one.*/
     
@@ -345,6 +346,8 @@ void stage_four(list_t *dining_records, int num_restaurants) {
     }
     
     print_dining_records(dining_records, num_restaurants);
+    printf("\nTop restaurants each customer should visit:\n");
+    print_restaurants_to_visit(dining_records, num_restaurants, restaurant_records);
 }
 
 void find_2_most_similar(customer_t customer, list_t *dining_records, int num_restaurants, customer_t top2_most_similar[2]) {
@@ -414,5 +417,34 @@ void update_recommendation(int num_restaurants, customer_t customer, customer_t 
                     customer.restaurant_visits[i] -= 1;
             }
         }
+    }
+}
+
+void print_restaurants_to_visit(list_t *dining_records, int num_restaurants, restaurant_records_t restaurant_records) {
+    node_t *temp = dining_records->head;
+    /* print top restaurants each customer should visit */
+    
+    while (temp != NULL) {
+        customer_t curr_customer = temp->data;       
+        printf("%s:", curr_customer.id);
+        
+        int max_value = 0;
+        for (int i = 0; i < num_restaurants; i++) {
+            int value = curr_customer.restaurant_visits[i];
+            
+            if (value > max_value) {
+                max_value = value;
+            }
+        }
+
+        for (int i = 0; i < num_restaurants; i++) {
+            int value = curr_customer.restaurant_visits[i];
+            if (value == max_value) {
+                printf(" %s", restaurant_records[i].name);
+            }
+        }
+        
+        printf("\n");
+        temp = temp->next;
     }
 }
