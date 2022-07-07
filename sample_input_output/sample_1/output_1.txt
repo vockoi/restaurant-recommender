@@ -22,3 +22,10 @@ migbyt:  *  1  -  +  -  -  +  -  1  0
 syzbls:  1  1  -  1  -  -  +  0  *  -
 ftddia:  -  -  -  1  -  -  0  1  -  0
 ozhodc:  0  0  0  -  -  -  0  1  -  0
+
+Top restaurants each customer should visit:
+jxrpfj: captain_cook
+migbyt: queen_of_the_fries the_sherlock_home
+syzbls: captain_cook queen_of_the_fries tim_ho_wonton
+ftddia: tim_ho_wonton lasagnes_kitchen
+ozhodc: lasagnes_kitchen

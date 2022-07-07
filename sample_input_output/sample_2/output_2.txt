@@ -67,3 +67,25 @@ zounds:  *  1  +  +  -  +  1  1  +  1  +  -  -  *  +  -  -  1
 enwomb:  +  -  *  -  1  +  +  *  +  *  1  1  +  -  -  -  -  -
 weekly:  +  1  *  -  *  +  +  *  +  *  1  +  +  -  -  -  -  -
 lagged:  +  -  +  -  -  -  +  +  -  -  *  0  0  -  1  -  -  -
+
+Top restaurants each customer should visit:
+doorga: delhi_tandoori phillip_bistro
+cipher: xinan_dumpling_co gataca tequila_palace
+forlay: kitashima
+penary: phuoc_qi_banh_mi delhi_tandoori phillip_bistro
+conite: starship_burger
+lotion: professors_run starship_burger delhi_tandoori
+angina: prince_alistairs gataca
+gharry: phuoc_qi_banh_mi just_pho_you kitashima delhi_tandoori
+murrey: pheonix_hotpot gataca tequila_palace delhi_tandoori
+choses: phillip_bistro
+oyster: stalagmites
+digged: gamo_gamo_chicken prince_alistairs ton_dojo pheonix_hotpot phuoc_qi_banh_mi just_pho_you delhi_tandoori bavarian_bier
+border: just_pho_you kitashima tequila_palace starship_burger
+thorax: phuoc_qi_banh_mi just_pho_you
+lustra: professors_run ton_dojo phillip_bistro the_brauhaus
+squall: pheonix_hotpot delhi_tandoori bavarian_bier
+zounds: prince_alistairs phuoc_qi_banh_mi just_pho_you kitashima bavarian_bier
+enwomb: xinan_dumpling_co tequila_palace starship_burger
+weekly: prince_alistairs tequila_palace
+lagged: stalagmites
