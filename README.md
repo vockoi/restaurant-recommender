@@ -3,14 +3,21 @@
 C program which recommends restaurants for customers to visit on the basis of user-based and content-based similarities, given a list of restaurant records and dining transactions.
 
 ## Table of contents
+* [Files](#files)
 * [Program input](#program-input)
 * [Program output](#program-output)
 * [Running the program](#running-the-program)
 * [Credits](#credits)
 
+## Files
+
+- The program is 'restaurant-recommender.exe'
+- Program code can be found in 'code', with the main C file being 'restaurant-recommender.c' and a supplementary linked list operations C file of 'listops.c'
+- Sample program input and output can be found in 'sample_input_output'
+
 ## Program input
 
-I strongly recommend viewing the sample program input as you read along this section. To do so, access the __ folder. 
+I strongly recommend viewing the sample program input as you read along this section.
 
 Input the program accepts is a .txt file consisting of two sections - 'restaurant records' and 'dining records', in the following format. The specifics of the input (e.g. length of restaurant ID) can be easily modified by changing the #defines at the top of the program.
 
@@ -36,7 +43,7 @@ The input continues with dining records containing at least 1 dining transaction
 
 ## Program output
 
-I strongly recommend viewing the sample program output as you read along this section. To do so, access the __ folder. 
+I strongly recommend viewing the sample program output as you read along this section.
 
 The program output consists of the following four 'stages':
 
@@ -53,9 +60,11 @@ The program output consists of the following four 'stages':
 
 ## Running the program
 
-To run the program, first compile 'program.c' which can be found in the folder 'program'; this should produce an executable file called 'program'. Use input redirection to provide your chosen restaurant and dining records file as input to the executable.
+To run the program, provide your chosen restaurant and dining records file as input to the executable. 
 
-For example in Apple terminal: ```program < input_file.txt```
+For example in Apple terminal: ```restaurant-recommender < input_file.txt```.
+
+If you'd like to compile the code yourself, compile 'restaurant-recommender.c' which can be found in 'code'; this should create the 'restaurant-recommender' executable file.
 
 ## Credits
 
