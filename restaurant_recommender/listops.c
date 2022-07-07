@@ -1,7 +1,7 @@
 /* Linked list defs:
  *
  * Adapted from implementation by Alistair Moffat: Jianzhong Qi, April 2022
- * Edited by: Victoria Halim, May 2022
+ * Edited by: Victoria H, May 2022
  *
  */
 
@@ -111,13 +111,10 @@ list_t
 }
 
 /* =====================================================================
-   Program written by Alistair Moffat, as an example for the book
-   "Programming, Problem Solving, and Abstraction with C", Pearson
-   Custom Books, Sydney, Australia, 2002; revised edition 2012,
-   ISBN 9781486010974.
+   Program written by Alistair Moffat, as an example for the book "Programming Problem Solving, and Abstraction with C", Pearson Custom Books, Sydney, Australia, 2002;
+   revised edition 2012, ISBN 9781486010974.
 
-   See http://people.eng.unimelb.edu.au/ammoffat/ppsaa/ for further
-   information.
+   See http://people.eng.unimelb.edu.au/ammoffat/ppsaa/ for further information.
 
    Prepared December 2012 for the Revised Edition.
    ================================================================== */
